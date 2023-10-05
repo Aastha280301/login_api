@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
       flash[:notice]="Login successful"
       redirect_to '/'
     else
-      flash[:notice]="Invalid Email or Password"
+      flash[:notice]="Invalid Username or Password"
       redirect_to '/login'
     end
   end
